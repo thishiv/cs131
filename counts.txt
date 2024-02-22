@@ -1,0 +1,4 @@
+The number of lines and words in the Music Category:
+
+830 - word count
+238 - line count
