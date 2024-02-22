@@ -1,0 +1,94 @@
+    1  pwd
+    2  mkdir temp
+    3  ls
+    4  mkdir sampleProject
+    5  ls -ltr
+    6  cd sampleProject/
+    7  touch sampleFile.txt
+    8  git init
+    9  git add
+   10  git status
+   11  git add .
+   12  git status
+   13  git config --global user.email thishitha.vaikuntam@sjsu.edu
+   14  git config --global user.name "Thishitha Vaikuntam"
+   15  cd ~/.ssh && ssh-keygen
+   16  mkdir ~/.ssh
+   17  cd ~/.ssh && ssh-keygen
+   18  cat id_rsa.pub
+   19  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC03uLHHm8GavYQRv3ticFijxB1/VdMO0eE7AHtJJiAQ/iJBQKDiw83jBxqEMV0IktyPV+4bN+RFfCdUSXXkJ3btSWGApHI1bew7hyzxBO87JM0ph3rIv+iEPuSc54GMLzW3z3pPi06E0hX6Rne79+LnikfxHqQBZQRCbQ7Vw8urNyzg40qIwgrC/S67Ns/Ei+AYc2VyoGQ9cqwz0dJ/MwczJpUtdK+SzJSLG0J2y+z8mh7/FgHlCY1I7BosHZSM6BdpHcd4p75fvBcN0A0fUstt8LYPvdBr7elE5y1wbqS7l+S3GePzXOAX7MoLzAlvZtivE0hQmdxLwCS4y6PK3zt9Yg9SAg/mPbxHg1fHmAfHUMjzvBtJL6sN4SzdWZXeBAa/hVYmTpTa3NfNxPQhyL+nTARNNSCs2GVpdAd/K4xL8rgwh2l7F/utYSZrCLiXi5PqXvt3lYjG83LuO563e9SOXJpbylzimQDmCFbi0OTnhLCNMpxlaK8nYJ5SFDCah8= vaikuntamsp24@sjsu.pic2.isv.ihost.com
+   20  [vaikuntamsp24@sjsu .ssh]$cat id_rsa
+   21  cat id_rsa.pub
+   22  git remote add origin git@github.com:thishiv/CS-131.git
+   23  pwd
+   24  cd ..
+   25  ls
+   26  cd sampleProject
+   27  git remote add origin git@github.com:thishiv/CS-131.git
+   28  git commit -m "Initial Commit"
+   29  git push --set-upstream origin main
+   30  git push --set-upstream origin master
+   31  vi sample1.txt
+   32  cat sample1.txt
+   33  ls
+   34  mkdir Worksheet1
+   35  ls
+   36  git remote add origin git@github.com:thishiv/CS-131.git
+   37  git remote add origin git@github.com:thishiv/CS-131.git 
+   38  cd ~/Desktop
+   39  mkdir cs131
+   40  cd cs131/
+   41  git init
+   42  cd ~/.ssh
+   43  cat id_rsa.pub
+   44  git remote add origin git@github.com:thishiv/cs131.git
+   45  echo "# cs131" >> README.md
+   46  git init
+   47  git add README.md
+   48  git commit -m "first commit"
+   49  git branch -M main
+   50  it remote add origin git@github.com:thishiv/cs131.git
+   51  git remote add origin git@github.com:thishiv/cs131.git
+   52  git push -u origin main
+   53  mkdir Worksheet1
+   54  touch Worksheet1/.placeholder
+   55  git add Worksheet1/.placeholder
+   56  git commit -m "Pushing first Worksheet"
+   57  git push origin main
+   58  history > cmds.log
+   59  git push origin main
+   60  git add cmds.log
+   61  git commit -m "history of commands for Worksheet 1"
+   62  git push origin mai
+   63  git push origin main
+   64  git clone https://github.com/thishiv/cs131.git
+   65  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+   66  ls
+   67  grep United State 'Global YouTube Statistics.csv'
+   68  grep Music 'Global YouTube Statistics.csv'
+   69  man wc
+   70  wc -l Music 'Global YouTube Statistics.csv'
+   71  grep Music 'Global YouTube Statistics.csv' | wc -l
+   72  grep Music 'Global Youtube Statistics.csv' | wc -w
+   73  grep Music 'Global YouTube Statistics.csv' | wc -w
+   74  vi counts.txt
+   75  cat counts.txt
+   76  grep Music 'Global Youtube Statistics.csv' | wc -w > counts.txt
+   77  ls
+   78  grep Music 'Global YouTube Statistics.csv' | wc -w
+   79  > counts.txt
+   80  cat counts.txt
+   81  vi counts.txt
+   82  grep Music 'Global YouTube Statistics.csv' | wc -w
+   83  >> counts.txt
+   84  cat counts.txt
+   85  grep Music 'Global YouTube Statistics.csv' | wc -w >> counts.txt
+   86  cat counts.txt
+   87  grep Music 'Global Youtube Statistics.csv' | wc -l >> counts.txt
+   88  grep Music 'Global YouTube Statistics.csv' | wc -w
+   89  grep Music 'Global YouTube Statistics.csv' | wc -l
+   90  grep Music 'Global YouTube Statistics.csv' | wc -l >> counts.txt
+   91  cat counts.txt
+   92  vi counts.txt
+   93  cat counts.txt
+   94  history > cmds.log
