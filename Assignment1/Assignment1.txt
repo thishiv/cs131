@@ -1,0 +1,47 @@
+1) no output, since we just had to make the Assignment1 directory.
+
+2) output:  /bin/bash
+
+2) output: /mnt/scratch/SP24_CS131_Jyotika/vaikuntamsp24	
+
+3) output: uid=1237(vaikuntamsp24) gid=1237(vaikuntamsp24) groups=1237(vaikuntamsp24),78(S78)
+   Answer: Based on the output, my UID would be 1237 and based on the GID I know I am part of 2 groups which
+   are vaikuntamsp24 and S78.
+
+4) no output, since we just had to make 2 directories
+
+5) output for ls -ld: dr-xr-xr-x 2 vaikuntamsp24 vaikuntamsp24 4096 Feb 28 20:12 myDir
+   Answer:  When I tested out cd, ls, and ls -l, all the commands worked since I still have execution and
+   read permission. However, I was not able to use the touch function since I don't have writing 
+   permissions. 
+
+6) output: myFile.txt
+  
+   Answer:  When I performed all these actions I was able to move the file from myDir2 to myDir3. I then   
+   used the ls function to see if it worked and appended that output to this file. 
+
+6) output:                           total        used        free      shared  buff/cache   available
+           Mem:          71367       32373       19852        3553       19141       33982
+           Swap:          4119           0        4119
+9) output: 
+	  NAME="Red Hat Enterprise Linux"
+	  VERSION="8.6 (Ootpa)"
+	  ID="rhel"
+	  ID_LIKE="fedora"
+ 	  VERSION_ID="8.6"
+	  PLATFORM_ID="platform:el8"
+	  PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+	  ANSI_COLOR="0;31"
+	  CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+	  HOME_URL="https://www.redhat.com/"
+	  DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+	  BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+	  REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+	  REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+	  REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+	  REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+   Answer: The versions is listed under  the os-release file 
+
+10) output: lrwxrwxrwx. 1 root root 22 Apr  6  2022 /etc/os-release -> ..//usr/lib/os-release
+   Answer:  All users have permission to read, write and execute for this file.

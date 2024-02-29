@@ -1,0 +1,47 @@
+Last login: Wed Feb 28 18:12:28 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Thishithas-MacBook-Pro:~ thishi$ ssh vaikuntamsp@24172.20.25.9
+ssh: Could not resolve hostname 24172.20.25.9: nodename nor servname provided, or not known
+Thishithas-MacBook-Pro:~ thishi$ ssh vaikuntamsp24@172.20.25.9
+vaikuntamsp24@172.20.25.9's password: 
+Permission denied, please try again.
+vaikuntamsp24@172.20.25.9's password: 
+Activate the web console with: systemctl enable --now cockpit.socket
+
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last failed login: Wed Feb 28 21:14:24 EST 2024 from 172.29.96.217 on ssh:notty
+There were 6 failed login attempts since the last successful login.
+Last login: Wed Feb 28 19:15:24 2024 from 172.29.96.217
+[vaikuntamsp24@sjsu ~]$ ls
+ cs131                            temp        Worksheet1
+'Global YouTube Statistics.csv'   users.lst   Worksheet2
+[vaikuntamsp24@sjsu ~]$ cd cs131
+[vaikuntamsp24@sjsu cs131]$ cd Assignment1
+[vaikuntamsp24@sjsu Assignment1]$ ls
+Assignment1.txt  cmds.logs_Assignment1  myDir  myDir2  myDir3
+[vaikuntamsp24@sjsu Assignment1]$ vi Assignment1.txt
+[vaikuntamsp24@sjsu Assignment1]$ vi cmds.logs_Assignment1
+
+1) command used: mkdir Assignment1
+
+2) command used: echo $SHELL >> cmds.log
+
+2) command used: echo $HOME >> cmds.log
+
+3) command used: id >> cmds.log
+
+4) commands used: mkdir myDir, chmod -w myDir, ls -ld myDir >> cmds.log
+
+5) commands used: mkDir myDir2, mkDir  myDir2
+
+6) commands used: cd myDir2, vi myFile.txt, cd -, mv myDir2/myFile.txt myDir3/
+
+6) commands used: free -m >> cmds.log
+
+9) commands used: cat /etc/os-release >> cmds.log
+
+10) commands used: ls -l /etc/os-release >> cmds.log
