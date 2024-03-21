@@ -1,0 +1,46 @@
+1a. The command is essentially trying to find all the regular files in the /etc directory and record the output in one.txt, while recording the errors in two.txt.
+
+1b. The one.txt file has a very large list of all the files in /etc directory. There is a wide variety of files such as the files that hold the users information, passwords, configurations, etc. The two.txt file contains a small lkist of the files that were denied permissions and resulted in errors when tryingto find them. 
+
+2. After performing the commands my results are: Mar 2006, with 15 channels
+						July 2014, with 13 channels
+						Aug 2014, with 12 channels
+   The command I used was: cut -d',' -f20,21 "Global YouTube Statistics.csv" | sort | uniq -c | sort -fr | head -3
+    - the cut -d',' -f20,21: I used this command to cut each line with the delimiter being a ',' at field 20(year craeted) and field 21(month created) 
+    - | sort: then I used the output as the input for the sort parameter and sorted all the dates alphabetically
+    - | uniq -c: used the ouput as the input for the uniq -c parameter which the counts the number of unique lines
+    - | sort -fr: then i sourted that output in rerverse descending order
+    - | head -3: then I displayed the first three lines since it was ordered from highest to least
+
+3. The processes owned by me are listed below:   
+    PID TTY          TIME CMD
+3951178 ?        00:00:10 systemd
+3951180 ?        00:00:00 (sd-pam)
+3951186 ?        00:00:00 sshd
+3951187 pts/10   00:00:00 bash
+4024466 pts/10   00:00:00 ps
+
+4b.This is the output when I open two terminals. I notice that there's an additional sshd and bash process that are running due to another terminal being opened. Along with this there is a vim process running and the PID is 4025834. 
+    PID TTY          TIME CMD
+3951178 ?        00:00:10 systemd
+3951180 ?        00:00:00 (sd-pam)
+3951186 ?        00:00:00 sshd
+3951187 pts/10   00:00:00 bash
+4025582 ?        00:00:00 sshd
+4025583 pts/29   00:00:00 bash
+4025834 pts/10   00:00:00 vim
+4026329 pts/29   00:00:00 ps
+
+4d. This is the output when I quit the file. Everything is the same except now the vim process is not listed because I closed  file.txt and the process is not actively running.  
+    PID TTY          TIME CMD
+3951178 ?        00:00:10 systemd
+3951180 ?        00:00:00 (sd-pam)
+3951186 ?        00:00:00 sshd
+3951187 pts/10   00:00:00 bash
+4025582 ?        00:00:00 sshd
+4025583 pts/29   00:00:00 bash
+4026627 pts/29   00:00:00 ps
+
+5. The init process is the first process that is running on the laptop. It initializes the system and is esseenitally starts running when the system is booted. When I performed the "pgrep systemd" the output was more than one process ID. However, when I performed "pgrep -o systemd" the output was 1 since that is the pid for the oldest process running which is the init process. 
+
+6. The "ps aux" lists out all the processes that are running on the system. It lists out the processes that are owned by the user along with the rest of the processes that are running. The "a"outputs all the processes in  the system, 'u' gives information about each process, and 'x' lists the information about all the background processes that are not associated with the terminal. 

@@ -1,0 +1,22 @@
+1a. find /etc -type f > one.txt 2> two.txt
+
+1b. cat one.txt
+    cat two.txt
+
+2.cut -d',' -f20,21 "Global YouTube Statistics.csv" | sort | uniq -c | sort -fr | head -3 >> assignment2.txt
+
+3. ps -u $USER >> assignment2.txt
+
+4a. vi file.txt
+   open  new terminal
+
+4b. ps -u $USER >> assignment2.txt
+
+4c. in file.txt: :q!
+
+4d. in second terminal: ps -u $USER >> assignment2.txt
+
+5. pgrep systemd (resulted in multiple pid)
+   prgep -o systemd (resulted in oldest pid)
+
+6. ps aux 
