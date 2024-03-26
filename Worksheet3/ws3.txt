@@ -1,0 +1,6 @@
+1. highest mothly earner, US: United States,9200000
+   highest mothly earner, UK: United Kingdom,2000000
+   highest mothly earner, India: India,9000000
+2.Most Subscribers, Education Category: 162000000
+  Most Subscribers, Sports Category: 96000000
+  Most Subscribers, Entertainment Category: 166000000

@@ -1,0 +1,17 @@
+  675  cd cs131
+  676  mkdir Worksheet3
+  677  vi ws3.txt
+  678  vi cmds.log
+  679  ls
+  683  cut -d',' -f8,16 "Global YouTube Statistics.csv" | tail -n +2 | sort -t ',' -k2,2nr > sorted_list.txt
+  684  grep 'United States' sorted_list.txt | head -1 >> ws3.txt
+  686  grep 'United Kingdom' sorted_list.txt | head -1 >> ws3.txt
+  687  grep 'India' sorted_list.txt | head -1 >> ws3.txt
+  697  vi ws3.txt
+  721  awk -F ',' 'NR > 1 {max = ($3 > max) ? $16 : max} END {print "Most Subscribers:", max}' "Global YouTube Statistics.csv"
+  722  cut -d ',' -f 5 "Global YouTube Statistics.csv" | tail -n +2 | sort | uniq
+  726  awk -F ',' '$5 == "Education" && NR > 1 {max = ($3 > max) ? $3 : max} END {print "Most Subscribers, Education Category:", max}' "Global YouTube Statistics.csv" >> ws3.txt
+  727  awk -F ',' '$5 == "Sports" && NR > 1 {max = ($3 > max) ? $3 : max} END {print "Most Subscribers, Sports Category:", max}' "Global YouTube Statistics.csv" >> ws3.txt
+  733  awk -F ',' '$5 == "Entertainment" && NR > 1 {max = ($3 > max) ? $3 : max} END {print "Most Subscribers, Entertainment Category:", max}' "Global YouTube Statistics.csv" >> ws3.txt
+  735  vi ws3.txt
+  736  history >> cmds.log
