@@ -1,0 +1,77 @@
+Script started on 2024-04-08 20:44:21-04:00
+bash-4.4$ mkdir Works[Ksheet4
+bash-4.4$ cd cs131
+bash-4.4$ ls
+ Assignment1			  README.md	     Worksheet1   Worksheet4
+ Assignment2			  sorted_list2.txt   worksheet2   ws4.txt
+'Global YouTube Statistics.csv'   sorted_list.txt    Worksheet3
+bash-4.4$ cd -
+/mnt/scratch/SP24_CS131_Jyotika/vaikuntamsp24
+bash-4.4$ vi ~/.bash_profile
+bash-4.4$ source ~/.bash_profile
+bash-4.4$ l
+total 272
+drwxrwxr-x 2 vaikuntamsp24 vaikuntamsp24   4096 Feb 13 23:16  Worksheet1
+drwxrwxr-x 3 vaikuntamsp24 vaikuntamsp24   4096 Feb 21 12:52  temp
+-rw-rw-r-- 1 vaikuntamsp24 vaikuntamsp24 200279 Feb 21 13:59 'Global YouTube Statistics.csv'
+drwxrwxr-x 3 vaikuntamsp24 vaikuntamsp24   4096 Feb 22 17:07  Worksheet2
+-rw-rw-r-- 1 vaikuntamsp24 vaikuntamsp24    630 Feb 28 13:09  users.lst
+-rw-rw-r-- 1 vaikuntamsp24 vaikuntamsp24      9 Mar  6 02:36  sample1.txt
+-rw-rw-r-- 1 vaikuntamsp24 vaikuntamsp24    169 Mar  6 06:00  sample.txt
+-rw-rw-r-- 1 vaikuntamsp24 vaikuntamsp24      0 Mar 13 12:15  record.txt
+-rw-rw-r-- 1 vaikuntamsp24 vaikuntamsp24     19 Mar 20 12:12  randomText.txt
+-rw-rw-r-- 1 vaikuntamsp24 vaikuntamsp24     81 Mar 26 00:39  ws3.txt
+-rw-rw-r-- 1 vaikuntamsp24 vaikuntamsp24  33955 Apr  8 20:43  ws4.txt
+drwxrwxr-x 9 vaikuntamsp24 vaikuntamsp24   4096 Apr  8 20:45  cs131
+bash-4.4$ w
+13
+'Global YouTube Statistics.csv'   sorted_list.txt    Worksheet3
+bash-4.4$ cd Worksheet4
+bash-4.4$ mkdir Subscribers
+bash-4.4$ ls
+Subscribers
+/mnt/scratch/SP24_CS131_Jyotika/vaikuntamsp24/cs131/Worksheet4
+bash-4.4$ ls
+bash-4.4$ cd cs131
+bash-4.4$ ls
+ Assignment1  'Global YouTube Statistics.csv'   sorted_list2.txt   Worksheet1   Worksheet3   ws4.txt
+ Assignment2   README.md		        sorted_list.txt    worksheet2   Worksheet4
+bash-4.4$ grep -E "United States|India" 'Global YouTube Statistics.csv' > country.txt
+bash-4.4$ awk -F ',' '/United States/ {print $3}' country.txt > United_states.txt
+bash-4.4$ awk -F ',' '/United States/ {print $3}' country.txt > India.txt
+bash-4.4$ awk '{ total += $1; count++ } END { print "Mean:", total / count }' United_states.txt > ws4_means.txt
+bash-4.4$ awk '{ total += $1; count++ } END { print "Mean:", total / count }' India.txt > ws4_means.txt^M
+bash-4.4$ vi greetings.txt
+bash-4.4$ sed -i '/Hello/Hi' greetings.txt
+bash-4.4$ vi greetings.txt
+Hi, Jane Doe!
+Greetings, John Smith!
+Hi, Michael Johnson!
+Hi, Emily Davis!
+sed: -e expression #1, char 2: extra characters after command
+bash-4.4$ vi greetigs.txt
+Hi, Jane Doe!
+Greetings, John Smith!
+Hi, Michael Johnson!
+Hi, Emily Davis!
+
+bash-4.4$ sed -i '/Doe/d'  greetings.txt
+bash-4.4$ vi greetings.txt
+bash-4.4$ sed -i 's/$/ (edited)/' greetings.txt
+bash-4.4$ vi greetings.txt
+bash-4.4$ sed -i '/^Hello,/{s/Michael Johnson/Mike Johnson/}' greetings.txt
+bash-4.4$ vi greetings.txt
+bash-4.4$ mv ws4_means.txt India.txt United_States.txt Worksheet4/
+bash-4.4$ cd mv ws4.txt Worksheet4/
+bash-4.4$ ls
+India.txt  Subscribers	United_States.txt  ws4_means.txt  ws4.txt
+bash-4.4$ mv United_States.txt India.txt Subscribers/
+bash-4.4$ cd -
+/mnt/scratch/SP24_CS131_Jyotika/vaikuntamsp24/cs131
+bash-4.4$ mv greetings.txt Worksheet4/
+bash-4.4$ cd Worksheet4/[K
+bash-4.4$ ls
+greetings.txt  Subscribers  ws4_means.txt  ws4.txt
+bash-4.4$ exit
+
+Script done on 2024-04-08 22:58:14-04:00
