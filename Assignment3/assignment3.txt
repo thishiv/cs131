@@ -1,0 +1,119 @@
+Task 1:
+commands used to solve: grep "sp24" last.fake > lastsp24.fake
+                        wc -l last.fake >> assignment3.txt
+                        wc -l lastsp24.fake >> assignment3.txt 
+output of last two commands: 507 last.fake
+                             478 lastsp24.fake
+
+Task 2:
+commands used: grep "Sun" lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work"}' >> assignment3.txt
+
+output of command: listed below
+The list of people who worked on Sunday are:
+aayushsp24
+akashsp24
+billysp24
+breannasp24
+briansp24
+chih-kuosp24
+fnusp24
+gavinsp24
+megansp24
+michellesp24
+swansp24
+xuebosp24
+Kudos to these people for putting in the work
+
+task 3:
+command used: awk '$6 ~ /^(23:|00:|01:|02:|03:|04:)/ {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Night Owls List:"} {print} END {print "Night Owls are dope. Please ensure you get enough sleep though."}' >> assignment3.txt
+
+output of command:
+Night Owls List:
+aarushisp24
+aayushsp24
+athishsp24
+ayesp24
+breannasp24
+gavinsp24
+gradysp24
+gursimransp24
+jadonsp24
+justinsp24
+matthewsp24
+ronsp24
+sheelsp24
+sunidhisp24
+tylermsp24
+xiaokesp24
+xuebosp24
+zakisp24
+Night Owls are dope. Please ensure you get enough sleep though.
+
+task 4:
+
+command used:awk '$6 ~ /^(0[5-9]:|10:)/ {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Early Birds List:"} {print} END {print "Early Birds are dope. Please ensure you get enough sleep though."}' >> assignment3.txt
+
+output of command:
+Early Birds List:
+ajaysp24
+ericsp24
+Early Birds are dope. Please ensure you get enough sleep though.
+
+task 5:
+command used: awk '{if ($1 ~ /^t/) print $1}' lastsp24.fake | sort | uniq >> assignment3.txt 
+
+output of command for lastsp24.fake file:  
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+
+command used for passwd.fake file: awk -F: '$1 ~ /^t/ {print $1}' passwd.fake >> assignment3.txt
+
+output of command for passwd.fake file:
+tss
+tcpdump
+tak23fa
+tommy23fa
+taigario
+tangnicholas
+tawdegargi
+trinhviana
+tienf23
+thif23
+tylersp24
+tanishasp24
+taliasp24
+tylermsp24
+
+task 6:
+command used: awk -F':' '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+
+output of command:
+angie23fa
+areebah23fa
+apple23fa
+ajay23fa
+alan23fa
+amreenf23
+acesp24
+akashsp24
+ayesp24
+alexsp24
+aayushsp24
+ajaysp24
+ashish
+amansp24
+
+task 7:
+command used: sed 's/[[:alnum:][:space:]]//g' passwd.fake | sort -u
+
+output of command:
+-::::-:/://
+-:::::///-://
+-:::::///__/-://
+-:::::/://
+::::-:///://
+:::::///://
+:::::///_/://
+:::::///__/://

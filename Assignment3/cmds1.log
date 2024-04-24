@@ -1,0 +1,20 @@
+task 1 command:grep "sp24" last.fake > lastsp24.fake
+                        wc -l last.fake >> assignment3.txt
+                        wc -l lastsp24.fake >> assignment3.txt
+
+task 2 command: grep "Sun" lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work"}' >> assignment3.txt
+
+task 3 command: awk '$6 ~ /^(23:|00:|01:|02:|03:|04:)/ {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Night Owls List:"} {print} END {print "Night Owls are dope. Please ensure you get enough sleep though."}' >> assignmennt3.txt
+
+task 4 command: awk '$6 ~ /^(0[5-9]:|10:)/ {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Early Birds List:"} {print} END {print "Early Birds are dope. Please ensure you get enough sleep though."}' >> assignment3.txt
+
+task 5 command: awk '{if ($1 ~ /^t/) print $1}' lastsp24.fake | sort | uniq >> assignment3.txt
+
+awk -F: '$1 ~ /^t/ {print $1}' passwd.fake >> assignment3.txt
+
+task 6 command:awk -F':' '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+
+task 7 command:sed 's/[[:alnum:][:space:]]//g' passwd.fake | sort -u
+
+
+
