@@ -1,0 +1,8 @@
+commands used for the for loop:
+
+categories=("Music" "Entertainment" "Gaming" "Comedy")
+for category in "${categories[@]}"; do
+    awk -F ',' -v cat="$category" '$8 == "United States" && $5 == cat' 'Global YouTube Statistics.csv' > "Worksheet5/United States/${category}.txt"
+    count=$(wc -l < "Worksheet5/United States/${category}.txt")
+    echo "${category}: ${count}" >> ws5.txt
+done
